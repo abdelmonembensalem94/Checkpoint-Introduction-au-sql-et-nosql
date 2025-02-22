@@ -1,0 +1,49 @@
+MongoDB – Base de données NoSQL
+
+MongoDB est une base de données NoSQL orientée documents qui stocke les données sous format BSON (Binary JSON). 
+Contrairement aux bases de données relationnelles (SQL), elle ne repose pas sur des tables et des relations, mais sur des collections et des documents.
+
+Flexible : Pas besoin de schéma fixe.
+Scalabilité horizontale : Facilement extensible avec le sharding.
+Performance élevée : Moins de jointures et d'opérations transactionnelles. 
+Modèle orienté document : Facile à manipuler avec des objets JSON.
+
+Concepts Clés de MongoDB
+● Collection : Équivalent d’une table en SQL
+● Document : Équivalent d’une ligne, stocké en JSON/BSON
+● Index : Amélioration des performances des requêtes
+● Requêtes CRUD (Create, Read, Update, Delete)
+
+SQL (Structured Query Language) est un langage utilisé pour interagir avec les bases de données relationnelles. Il permet de créer, gérer, interroger et manipuler les données dans une base de données relationnelle (RDBMS - Relational Database Management System).
+Principaux Systèmes de Gestion de Bases de Données (SGBD) utilisant SQL :
+● MySQL
+● PostgreSQL
+● SQLite
+● SQL Server
+● Oracle Database
+Les Composants Clés d'une Base SQL
+● Tables : Contiennent les données sous forme de lignes et de colonnes.
+● Colonnes (Attributs) : Définissent les champs d’une table.
+● Lignes (Enregistrements) : Contiennent les données réelles.
+● Clé Primaire (Primary Key) : Identifiant unique de chaque ligne.
+● Clé Étrangère (Foreign Key) : Assure la relation entre deux tables.
+
+Comparaison entre MongoDB et SQL:
+Modèle de données : MongoDB utilise un modèle orienté document où les données sont stockées sous forme de documents JSON ou BSON, ce qui permet une structure flexible et dynamique. En revanche, SQL repose sur un modèle relationnel où les données sont organisées dans des tables avec des lignes et des colonnes, exigeant un schéma rigide.
+
+Schéma : MongoDB ne nécessite pas de schéma prédéfini, ce qui permet de modifier facilement la structure des données sans affecter les documents existants. À l'inverse, les bases de données SQL nécessitent une définition de schéma précise, et toute modification du schéma nécessite des migrations de données.
+
+Scalabilité : MongoDB est conçu pour être scalable horizontalement, ce qui signifie que vous pouvez ajouter plus de serveurs pour gérer un volume croissant de données et de trafic. En revanche, SQL est principalement scalable verticalement, ce qui consiste à ajouter plus de ressources à un seul serveur, ce qui peut devenir coûteux et difficile à maintenir à grande échelle.
+
+Transactions : MongoDB, bien qu'il supporte des transactions ACID à partir de la version 4.0, ne propose pas la même profondeur de gestion des transactions qu'une base de données SQL. SQL, en revanche, offre un support complet des transactions ACID, garantissant la cohérence, l'intégrité et la fiabilité des opérations, ce qui est crucial pour des applications nécessitant des garanties strictes.
+
+Cas d'utilisation : MongoDB est particulièrement adapté aux applications qui nécessitent une grande flexibilité, comme les applications web modernes, la gestion de données semi-structurées, ou des systèmes avec de gros volumes de données. SQL est idéal pour des applications nécessitant des relations complexes entre les données et des transactions fiables, comme les systèmes financiers, de gestion d'entreprise ou toute application qui exige une structure de données bien définie et une intégrité rigoureuse.
+
+
+conclusion:
+
+MongoDB est mieux adapté aux applications nécessitant une scalabilité horizontale, une flexibilité dans le schéma, et une gestion de données semi-structurées ou non structurées.
+SQL reste le choix privilégié pour des systèmes où la cohérence des données, la fiabilité des transactions et un schéma rigide sont cruciaux.
+Le choix entre MongoDB et SQL dépend des besoins spécifiques du projet : gestion de grandes quantités de données avec flexibilité (MongoDB) ou application avec des transactions strictes et des données structurées (SQL).
+
+
