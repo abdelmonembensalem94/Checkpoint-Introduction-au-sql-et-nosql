@@ -1,5 +1,5 @@
-MongoDB – Base de données NoSQL
 
+MongoDB – Base de données NoSQL:
 MongoDB est une base de données NoSQL orientée documents qui stocke les données sous format BSON (Binary JSON). 
 Contrairement aux bases de données relationnelles (SQL), elle ne repose pas sur des tables et des relations, mais sur des collections et des documents.
 
@@ -7,6 +7,13 @@ Flexible : Pas besoin de schéma fixe.
 Scalabilité horizontale : Facilement extensible avec le sharding.
 Performance élevée : Moins de jointures et d'opérations transactionnelles. 
 Modèle orienté document : Facile à manipuler avec des objets JSON.
+Avantages
+● Haute scalabilité (horizontal scaling)
+● Flexibilité des données
+● Rapidité des opérations en lecture/écriture
+Inconvénients
+● Moins structuré, nécessitant plus de logique applicative
+● Absence de support ACID dans certaines bases
 
 Concepts Clés de MongoDB
 ● Collection : Équivalent d’une table en SQL
@@ -14,6 +21,7 @@ Concepts Clés de MongoDB
 ● Index : Amélioration des performances des requêtes
 ● Requêtes CRUD (Create, Read, Update, Delete)
 
+Introduction à SQL:
 SQL (Structured Query Language) est un langage utilisé pour interagir avec les bases de données relationnelles. Il permet de créer, gérer, interroger et manipuler les données dans une base de données relationnelle (RDBMS - Relational Database Management System).
 Principaux Systèmes de Gestion de Bases de Données (SGBD) utilisant SQL :
 ● MySQL
@@ -27,6 +35,14 @@ Les Composants Clés d'une Base SQL
 ● Lignes (Enregistrements) : Contiennent les données réelles.
 ● Clé Primaire (Primary Key) : Identifiant unique de chaque ligne.
 ● Clé Étrangère (Foreign Key) : Assure la relation entre deux tables.
+
+Avantages
+● Structuration rigoureuse des données
+● ACID (Atomicité, Cohérence, Isolation, Durabilité)
+● Sécurité des données
+Inconvénients
+● Manque de flexibilité pour des données non structurées
+● Performance limitée pour des volumes massifs de données
 
 Comparaison entre MongoDB et SQL:
 Modèle de données : MongoDB utilise un modèle orienté document où les données sont stockées sous forme de documents JSON ou BSON, ce qui permet une structure flexible et dynamique. En revanche, SQL repose sur un modèle relationnel où les données sont organisées dans des tables avec des lignes et des colonnes, exigeant un schéma rigide.
